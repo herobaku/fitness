@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+:root {
+    --txt-white: #fff;
+    --green: #a1c927;
+    --red: #fd634d;
+}
+
+header {
+    height: 100vh;
+    background: #fff url('../img/bg_header.jpg') center/cover;
+    position: relative;
+    text-align: center;
+}
+
+nav {
+    padding: 4.5vh 0 0 0;
+}
+
+.logo img {
+    max-width: 150px;
+    width: 15%;
+}
+
+#title, #line {
+    position: absolute;
+}
+
+#menu li a, #title {
+    text-transform: uppercase;
+    color: var(--txt-white);
+}
+
+#menu li a {
+    font: .8em 'Poppins', sans-serif;
+}
+
+#title {
+    width: 100%;
+    bottom: 17vh;
+}
+
+#title h1 {
+    font: 2em 'Open Sans', sans-serif;
+}
+
+#title h5 {
+    font: 1em 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.greentxt {
+    color: var(--green);
+}
+
+.redtxt {
+    color: var(--red);
+}
+
+.greenbg { 
+    background-color: var(--green); 
+}
+
+.redbg { 
+    background-color: var(--red); 
+}
+
+.whitetxt { 
+    color: var(--txt-white) 
+}
+
+.whitebg { 
+    background-color:var(--txt-white) ; 
+}
+
+.padding {
+    padding: 20px 30px;
+}
+
+#line {
+    height: 50px;
+    background: #fd634d4d;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.articles {
+    padding: 40px 0 40px 0;
+}
+
+.col25 {
+     width: 100%; padding: 60px 20px;
+}
+
+.col50 { 
+    width: 100%; padding: 0px 20px;
+}
+
+.col25  i {
+    font-size: 1.6em; 
+}
+
+.col25 h2 { 
+    font: 400 1.5em 'Open Sans', sans-serif; 
+    padding: 12px 0 16px 0;
+}
+
+.col25 p, .col25 a { 
+    font: .8em/24px 'Open Sans', sans-serif;
+    padding-bottom: 28px;
+}
+
+.col25 a span { 
+    margin-left: 5px; 
+}
+
+#fitnessfirst { 
+    background: url('../img/fitnessfirst.jpg') center/cover 
+}
+
+#yourbody { 
+    background: url('../img/yourbody.jpg') center/cover 
+}
+
+#lifestyle { 
+    background: url('../img/lifestyle.jpg') center 20%/cover 
+}
+
+#summeroffun { 
+    background: url('../img/summeroffun.jpg') center/cover 
+}
+
+#grape { 
+    background: url('../img/grape.jpg') center/cover 
+}
+
+#avocado { 
+    background: url('../img/avocado.jpg') center/cover 
+}
+
+.vh50 { 
+    min-height: 50vh; 
+}
+
+.center { text-align: center; }
+
+.row a, .row i {
+    display: block;
+}
+
+h6 { 
+    font: 400 .87em 'Poppins', sans-serif; 
+}
+
+h3 { 
+    font: 300 2.1em 'Open Sans', sans-serif;
+    text-transform: uppercase; 
+}
+
+#leaders { 
+    background: url('../img/leaders.jpg') center top/cover;
+    height: 805px;
+}
+
+.title { 
+    padding-top: 29vh;
+    padding-left: 25px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 18px 0 20px 21px;
+    border-radius: 2px;
+    border: 0;
+    border: 1px solid #83969f
+}
+
+.form input[type="submit"] {
+    background-color: #a2ca28;
+    color: var(--txt-white)
+}
+
+.form input:placeholder {
+    font: .8em 'Poppins' sans-serif;
+    color: #83969f;
+}
+
+.fas { font-size: 2em; text-align: center;}
+
+footer { 
+    min-height: 50vh;
+    padding: 25px 0;
+    background: #0c1119;
+}
+
+#social {
+    margin-top: 15px;
+}
+
+#social a { 
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1em;
+}
+
+#social a:nth-child(1) {
+    background: #2e3092;
+}
+
+#social a:nth-child(2) {
+    background: #00adef;
+}
+
+#social a:nth-child(3) {
+    background: #ed3123;
+}
+
+#social a:nth-child(4) {
+    background: #16198f;
+}
+
+@media only screen and (min-width: 768px) {
+    header { text-align: inherit; }
+    #title h1 { font-size: 2.5em; }
+    #title h5 { text-align: right; margin-right: 15px }
+    .logo { padding: 0 0 0 50px}
+    #title { width:inherit; padding: 0 0 0 120px; }
+    #menu {float: right;}
+    #menu li {display: inline-block; padding: 0 30px;}
+    .container {max-width: 1180px; margin: auto;}
+    .col25 { width: 25%;}
+    .col25, .col50 { padding: 20px 20px; }
+    .floatL { float: left }
+    .floatR {float: right; }
+    .row::after { content: ""; display: table; clear: both; }
+    .col25 i { font-size: 3.2em; }
+    .col25 h2 { padding: 24px 0 32px 0; }
+    .col33 { width: 33.33%; }
+    .col66 { width: 66.66%; }
+    .title { max-width: 680px; margin: auto;}
+    .title h3 { margin-bottom: 30px; font-size: 400 2.8em "Open Sans", sans-serif; text-transform: none;}
+    .title p { font-size: 400 1em/23px "Open Sans", sans-serif; }
+    .col50 { width: 50%; padding-left: 25px;}
+    #social a { font-size: .5em; }
+    .form { margin-top: 20px; }
+    .form input { display: inline-block; margin-bottom: 10px;}
+    .form input:nth-child(1) { width: 205px; }
+    .form input:nth-child(2) { width: 340px; }
+    .form input:nth-child(3) { width: 182px; }
+    .post { position: relative; }
+    .post {  }
+}
